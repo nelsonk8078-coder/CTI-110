@@ -1,0 +1,39 @@
+# cti 110
+# p3t1 - warm up with if statments
+# nelson
+
+def main():
+    print("hello and welcome to the dungeon!")
+    level = int(input("What level are you? "))
+    if level >= 21:
+        print("You can enter this dungeon")
+    else:
+        print("Try leveling up first")
+
+
+    print("Time to enter the dungeon")
+    potions = int(input("How many health potions id you bring"))
+    if potions == 0:
+        print("It's danger to go alone without potions")
+    elif potions == 1:
+        print(f"you have {potions} health potion")
+    elif potions >= 1:
+        print(f"you have {potions} health potions")
+    else:
+        print(f"how did you get {potions}? Do you owe the salesmen?")
+
+    print("You are facing 🐒Sun wukong🐒")
+    print("this will be a rough fight")
+
+    if level >= 25:
+        if potions > 3:
+            print("It takes a while but you beat the Moneky King")
+            print("***YOU WIN***")
+        else:
+            print("You run out of heals and he strikes you down before you can beat him")
+            print("***GAME OVER***")
+    else:
+                print("He strikes you down and laughs")
+                print("***GAME OVER***")
+
+main()
